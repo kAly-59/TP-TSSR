@@ -1,0 +1,82 @@
+---
+
+# Activation des Ports dans Nginx et SSH
+
+## Introduction
+
+Nginx peut être configuré pour écouter sur différents ports pour les requêtes HTTP, tandis que SSH peut être configuré pour écouter sur un port spécifique pour les connexions sécurisées.
+
+---
+
+## Activation du Port HTTP (9876) dans Nginx
+
+### Étape 1: Ouvrir le Fichier de Configuration de Nginx
+
+1. Ouvrez un terminal.
+
+2. Utilisez un éditeur de texte pour ouvrir le fichier de configuration du serveur virtuel par défaut de Nginx :
+   ```
+   sudo nano /etc/nginx/sites-available/default
+   ```
+
+### Étape 2: Modifier le Fichier de Configuration
+
+1. Trouvez la section `server {` dans le fichier.
+
+2. Ajoutez une nouvelle ligne pour spécifier le port sur lequel Nginx doit écouter. Par exemple, pour activer le port 9876 pour HTTP, ajoutez la ligne suivante :
+   ```
+   listen 9876;
+   ```
+
+### Étape 3: Enregistrer et Quitter
+
+1. Enregistrez les modifications en appuyant sur `Ctrl + O`, puis appuyez sur `Enter`.
+
+2. Quittez l'éditeur de texte en appuyant sur `Ctrl + X`.
+
+### Étape 4: Redémarrer Nginx
+
+Pour appliquer les modifications, redémarrez le service Nginx en utilisant la commande :
+   ```
+   sudo systemctl restart nginx
+   ```
+
+---
+
+## Activation du Port SSH (2222)
+
+### Étape 1: Ouvrir le Fichier de Configuration SSH
+
+1. Ouvrez un terminal.
+
+2. Utilisez un éditeur de texte pour ouvrir le fichier de configuration SSH :
+   ```
+   sudo nano /etc/ssh/sshd_config
+   ```
+
+### Étape 2: Modifier le Fichier de Configuration
+
+1. Recherchez la ligne qui spécifie le port SSH. Par défaut, cette ligne devrait ressembler à ceci :
+   ```
+   Port 22
+   ```
+
+2. Si cette ligne est commentée (précédée d'un `#`), supprimez le `#`. Sinon, si vous souhaitez modifier le port SSH, changez simplement le nombre du port. Par exemple :
+   ```
+   Port 2222
+   ```
+
+### Étape 3: Enregistrer et Quitter
+
+1. Enregistrez les modifications en appuyant sur `Ctrl + O`, puis appuyez sur `Enter`.
+
+2. Quittez l'éditeur de texte en appuyant sur `Ctrl + X`.
+
+### Étape 4: Redémarrer le Service SSH
+
+Pour appliquer les modifications, redémarrez le service SSH en utilisant la commande :
+   ```
+   sudo systemctl restart ssh
+   ```
+
+---
