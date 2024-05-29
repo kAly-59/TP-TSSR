@@ -1,0 +1,91 @@
+**Installation et Déploiement du Serveur Grafana**
+
+1. **Installation des Utilitaires Requis :**
+   - Commencez par installer quelques utilitaires nécessaires à l'aide de la commande apt :
+     ```bash
+     sudo apt-get install -y apt-transport-https software-properties-common
+     ```
+
+2. **Importation de la Clé GPG Grafana :**
+   - Importez la clé GPG de Grafana pour vérifier l'authenticité des paquets téléchargés :
+     ```bash
+     sudo wget -q -O /usr/share/keyrings/grafana.key https://apt.grafana.com/gpg.key
+     ```
+
+3. **Ajout du Dépôt des Versions Stables de Grafana :**
+   - Ajoutez le dépôt des "versions stables" de Grafana à votre liste de sources de paquets :
+     ```bash
+     echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+     ```
+
+4. **Mise à Jour des Paquets :**
+   - Mettez à jour la liste des paquets disponibles dans les dépôts, y compris le nouveau paquet Grafana :
+     ```bash
+     sudo apt-get update
+     ```
+
+5. **Installation de Grafana :**
+   - Installez la version open-source de Grafana en utilisant la commande suivante :
+     ```bash
+     sudo apt-get install grafana
+     ```
+
+6. **Rechargement du Daemon systemctl :**
+   - Rechargez le daemon systemctl pour prendre en compte les changements de configuration :
+     ```bash
+     sudo systemctl daemon-reload
+     ```
+
+7. **Activation et Démarrage du Serveur Grafana :**
+   - Activez le service Grafana pour qu'il démarre automatiquement au démarrage du système, puis démarrez-le :
+     ```bash
+     sudo systemctl enable grafana-server.service
+     sudo systemctl start grafana-server
+     ```
+
+8. **Vérification de l'État du Serveur Grafana :**
+   - Vérifiez l'état du serveur Grafana pour vous assurer qu'il fonctionne correctement :
+     ```bash
+     sudo systemctl status grafana-server
+     ```
+
+Assurez-vous que le service Grafana est actif et qu'il fonctionne correctement. Une fois Grafana installé, vous pourrez l'utiliser pour visualiser les statistiques collectées par Prometheus.
+
+**Intégration de Grafana et Prometheus**
+
+1. **Accès à l'Interface Web de Grafana :**
+   - Utilisez un navigateur web pour accéder au port 3000 du serveur de surveillance. Par exemple, entrez http://adresse_ip_locale:3000, en remplaçant adresse_ip_locale par l'adresse IP réelle. Grafana affiche la page de connexion. Utilisez le nom d'utilisateur admin et le mot de passe par défaut password. Changez le mot de passe pour une valeur plus sécurisée lorsque vous y êtes invité.
+
+   ![Page de Connexion Grafana](grafana_login_page.png)
+
+2. **Ajout de Prometheus comme Source de Données :**
+   - Après un changement de mot de passe réussi, Grafana affiche le Tableau de Bord Grafana.
+   - Pour ajouter Prometheus en tant que source de données, cliquez sur le symbole d'engrenage, représentant la Configuration, puis sélectionnez Sources de Données.
+
+   ![Bouton de Configuration d'une Source de Données Grafana](grafana_config_button.png)
+
+   - À l'écran suivant, cliquez sur le bouton Ajouter une source de données.
+
+   ![Bouton d'Ajout d'une Source de Données Grafana](grafana_add_data_source.png)
+
+   - Choisissez Prometheus comme source de données.
+
+   ![Sélection d'une Source de Données Prometheus](grafana_select_prometheus.png)
+
+   - Pour une source Prometheus locale, comme décrit dans ce guide, définissez l'URL sur http://localhost:9090. La plupart des autres paramètres peuvent rester aux valeurs par défaut. Cependant, une valeur de Timeout non par défaut peut être ajoutée ici.
+
+   ![Configuration de la Source de Données Prometheus](grafana_configure_prometheus.png)
+
+   - Lorsque vous êtes satisfait des paramètres, sélectionnez le bouton Enregistrer & tester en bas de l'écran.
+
+   ![Enregistrement de la Source de Données Prometheus](grafana_save_prometheus.png)
+
+3. **Confirmation de la Configuration de la Source de Données :**
+   - Si tous les paramètres sont corrects, Grafana confirme que la source de données fonctionne.
+
+   ![Message de Confirmation de la Source de Données](grafana_data_source_confirmation.png)
+
+Une fois Prometheus ajouté en tant que source de données, vous pourrez l'utiliser pour créer des visualisations dans Grafana.
+
+
+
