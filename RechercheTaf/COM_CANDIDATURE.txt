@@ -6,7 +6,11 @@ Je vous remercie par avance pour l'attention que vous porterez à ma candidature
 
 Cordialement
 
+<<<<<<< HEAD
 ----------------------------------------------------------------------------------
+=======
+---
+>>>>>>> 07f438c4cbad29b493daad274ecfd6b109dedf81
 
 Bonjour,
 
@@ -21,6 +25,7 @@ Motivé et déterminé, je me tiens à votre disposition. Dans cette attente, je
 Cordialement,
 CALLET Kevin
 
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------
 
 Bonjour à tous,
@@ -38,3 +43,35 @@ Ce stage représente une étape cruciale dans ma formation et me permettra de ga
 Si vous disposez d'une opportunité de stage correspondant à mon profil sur la période indiquée, n'hésitez pas à me contacter ou à partager cette publication. Je reste à votre entière disposition pour toute information complémentaire.
 
 Merci d'avance pour votre aide #TSSR #Stage #MaintenanceRéseau #SécuritéRéseau #RéseauxInformatiques
+=======
+---
+
+
+Bonjour,
+
+Je suis actuellement en formation de "Technicien Supérieur Systèmes et Réseaux" (TSSR) et je recherche un stage sur Lille et les alentours pour une durée de 3 mois à partir d'octobre 2024 afin de valider ma formation.
+
+Si une opportunité se présente, je serais ravi de pouvoir en discuter. Vous pouvez me contacter par email à kvnclt.pro@gmail.com.
+
+Merci pour votre attention.
+
+Cordialement,
+
+Kevin CALLET
+
+---
+
+Bonjour,
+
+Je suis actuellement en formation de "Technicien Supérieur Systèmes et Réseaux" (TSSR) et je recherche un stage sur Lille et les alentours pour une durée de 3 mois à partir d'octobre 2024 afin de valider ma formation.
+
+Si vous avez une personne travaillant dans le domaine du réseau au sein de votre lycée/école, je serais ravi de pouvoir en discuter. Vous pouvez me contacter par email à kvnclt.pro@gmail.com.
+
+Merci pour votre attention.
+
+Cordialement,
+
+Kevin CALLET
+
+---
+>>>>>>> 07f438c4cbad29b493daad274ecfd6b109dedf81
