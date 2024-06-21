@@ -1,7 +1,13 @@
-Bonjour,
+Objet : Demande d'information sur les opportunités de stage en TSSR
 
-Je suis actuellement en formation de Technicien Supérieur en Services et Réseaux  (TSSR), et je suis à la recherche d'un stage pour la période du 30/09/2024 au 10/12/2024.
+Bonjour {{firstName}},
 
-Je vous remercie par avance pour l'attention que vous porterez à ma candidature.
+Actuellement étudiant à Simplon je me permets de vous contacter car je recherche un stage en Technicien Supérieur Systèmes et Réseaux (TSSR) pour la période du 30 septembre 2024 au 12 décembre 2024.
 
-Cordialement
+Je serais très intéressé de discuter avec vous pour savoir si votre entreprise pourrait avoir des opportunités de stage dans ce domaine.
+
+Auriez-vous quelques minutes à m'accorder pour échanger à ce sujet ?
+
+Je vous remercie d'avance pour votre aide et votre disponibilité.
+
+Bien cordialement,
