@@ -2,7 +2,7 @@ Objet : Demande d'information sur les opportunités de stage en TSSR
 
 Bonjour {{firstName}},
 
-Actuellement étudiant à Simplon je me permets de vous contacter car je recherche un stage en Technicien Supérieur Systèmes et Réseaux (TSSR) pour la période du 30 septembre 2024 au 12 décembre 2024.
+Actuellement étudiant à Simplon je me permets de vous contacter car je recherche un stage en Technicien Supérieur Systèmes et Réseaux (TSSR) pour la période du 30 septembre 2024 au 10 décembre 2024.
 
 Je serais très intéressé de discuter avec vous pour savoir si votre entreprise pourrait avoir des opportunités de stage dans ce domaine.
 
