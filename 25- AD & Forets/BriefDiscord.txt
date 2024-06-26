@@ -1,0 +1,30 @@
+Contexte
+Vous travaillez en tant que technicien système et réseau au sein d’une entreprise internationale qui possède des bureaux dans plusieurs pays. Votre mission est de mettre en place un Active Directory (AD) pour gérer l’authentification, l’autorisation et la gestion des ressources informatiques dans ces sites distants.
+
+Analyse des besoins :
+Rencontrez les responsables informatiques de chaque site distant pour comprendre leurs besoins spécifiques. 
+Contactez le via son mail : cduplouy.ext+exercices@simplon.co
+(Le +dans le nom de l’adresse permet de créer un alias sur sa boîte mail afin de filtrer vos demandes )
+N’oubliez pas de bien renseigner l’objet du mail afin que celui-ci vous réponde, et surtout à bien renseigner votre demande complète. 
+Identifiez le nombre d’utilisateurs, les groupes de sécurité, les ressources partagées que vous souhaitez mettre en place.
+(Gestion par services? Par localité? détaillez moi tout cela ) 
+(Pourquoi ne pas créer un tableau pour cela dans Sheet ?)
+Documentez ces informations pour orienter la conception de l’AD.
+Conception de la topologie AD :
+Créez une topologie AD multi-sites en fonction des sites géographiques. Par exemple, si l’entreprise a des bureaux à Paris, New York et Tokyo, configurez trois sites AD correspondants.
+Associez chaque site à un sous-réseau IP spécifique.
+Installation des contrôleurs de domaine :
+Installez des contrôleurs de domaine dans chaque site. Assurez-vous qu’ils sont correctement configurés avec les rôles AD (réplication, DNS, etc.).
+Vérifiez que la réplication initiale entre les contrôleurs de domaine fonctionne correctement.
+Configuration de la réplication inter-sites :
+Configurez la réplication inter-sites pour synchroniser les données AD entre les sites. Utilisez des liens de réplication pour définir la fréquence et les heures de réplication.
+Surveillez la réplication à l’aide d’outils tels que Repadmin.
+Gestion des accès distants :
+Mettez en place des solutions d’accès distant sécurisées (VPN, accès Web) pour permettre aux utilisateurs nomades d’accéder à l’AD depuis n’importe quel site.
+Assurez-vous que les politiques de sécurité sont appliquées même pour les utilisateurs distants.
+Sécurisation de l’AD :
+Appliquez des stratégies de groupe (GPO) pour renforcer la sécurité. Par exemple, exigez des mots de passe complexes, limitez les droits d’accès, etc.
+Surveillez les journaux d’événements pour détecter toute activité suspecte.
+Tests et documentation :
+Effectuez des tests de basculement entre les contrôleurs de domaine en cas de panne.
+Documentez la configuration AD, les procédures de dépannage et les contacts d’assistance.
