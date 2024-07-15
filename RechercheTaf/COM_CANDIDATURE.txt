@@ -6,15 +6,12 @@ Je vous remercie par avance pour l'attention que vous porterez à ma candidature
 
 Cordialement
 
-<<<<<<< HEAD
+
 ----------------------------------------------------------------------------------
-=======
----
->>>>>>> 07f438c4cbad29b493daad274ecfd6b109dedf81
 
 Bonjour,
 
-Je suis actuellement en formation Techniques de Services en Systèmes et Réseaux Informatiques (TSSR) et je suis à la recherche d'un stage pour parfaire mes compétences. C'est avec un vif intérêt que je me tourne vers Enosi pour un stage du 30 septembre au 10 décembre 2024.
+Je suis actuellement en formation Tech Systèmes et Réseaux Informatiques (TSSR) et je suis à la recherche d'un stage pour parfaire mes compétences. C'est avec un vif intérêt que je me tourne vers Enosi pour un stage du 30 septembre au 10 décembre 2024.
 
 Avec ma formation en développement web et ma curiosité naturelle et mon goût  pour les défis, je pourrai apporter une valeur ajoutée à vos projets et me permettront de relever avec enthousiasme les challenges qui se présenteront.
 
@@ -61,17 +58,14 @@ Kevin CALLET
 
 ---
 
-Bonjour,
+Bonjour à tous,
 
-Je suis actuellement en formation de "Technicien Supérieur Systèmes et Réseaux" (TSSR) et je recherche un stage sur Lille et les alentours pour une durée de 3 mois à partir d'octobre 2024 afin de valider ma formation.
+Je suis actuellement en formation de Technicien Supérieur en Services et Réseaux de Communication (TSSR) et je suis à la recherche d'un stage du 30/09 au 10/12 pour valider mon diplôme.
 
-Si vous avez une personne travaillant dans le domaine du réseau au sein de votre lycée/école, je serais ravi de pouvoir en discuter. Vous pouvez me contacter par email à kvnclt.pro@gmail.com.
+Ce stage représente une étape cruciale dans ma formation et me permettra de gagner en expérience dans un environnement professionnel. Je suis motivé, curieux d'apprendre et prêt à relever de nouveaux défis.
 
-Merci pour votre attention.
+Si vous disposez d'une opportunité de stage correspondant à mon profil sur la période indiquée, n'hésitez pas à me contacter. Je reste à votre entière disposition pour toute information complémentaire.
 
-Cordialement,
+Merci d'avance
 
-Kevin CALLET
-
----
->>>>>>> 07f438c4cbad29b493daad274ecfd6b109dedf81
+----
