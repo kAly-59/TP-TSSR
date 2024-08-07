@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mon-deployment
+spec:
+  replicas: 7
+  selector:
+    matchLabels:
+      app: tp38  # Nom de l'application
+  template:
+    metadata:
+      labels:
+        app: tp38  # Nom de l'application
+    spec:
+      containers:
+      - name: tp38  # Nom du conteneur
+        image: tbmc93/tp38:v1  # Nom de l'image Docker
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mon-service
+spec:
+  selector:
+    app: tp38  # Nom de l'application
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
