@@ -12,7 +12,7 @@ tag_and_push_docker_img() {
 }
 
 # Function to open Kubernetes deployment
-apply_kubernetes_deployment() {
+open_kubernetes_deployment() {
     sudo nano /home/mysiteweb/goweb-deploy.yaml
 }
 
@@ -46,7 +46,7 @@ show_menu() {
 # Menu
 while true; do
     show_menu
-    read -p "Choose an option: "
+    read -p "Choose an option: " choice
     case $choice in
         1)
             build_docker_img
