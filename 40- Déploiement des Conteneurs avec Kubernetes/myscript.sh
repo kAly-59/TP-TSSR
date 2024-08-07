@@ -6,7 +6,7 @@ build_docker_img() {
 }
 
 # Function to tag and push Docker image to Docker Hub
-tag_and_push_docker_image() {
+tag_and_push_docker_img() {
     docker tag tbmc93/tp38:v2 tbmc93/tp38:v2
     docker push tbmc93/tp38:v2
 }
@@ -46,13 +46,13 @@ show_menu() {
 # Menu
 while true; do
     show_menu
-    read -p "Choose an option: " choice
+    read -p "Choose an option: "
     case $choice in
         1)
             build_docker_img
             ;;
         2)
-            tag_and_push_docker_image
+            tag_and_push_docker_img
             ;;
         3)
             apply_kubernetes_deployment
