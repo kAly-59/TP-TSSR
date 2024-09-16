@@ -1,0 +1,64 @@
+[Serveur DHCP/DMZ]
+172.31.4.252/28
+VLAN 300
+GW: 172.31.4.206
+    |
+    | Fa0/16
+    |
+[Switch 1]
+Fa0/8 (VLAN 200)
+Fa0/10 (VLAN 100)
+Fa0/12 (VLAN 200)
+Fa0/14 (VLAN 100)
+Fa0/16 (VLAN 300)
+Fa0/24 (Trunk: VLAN 100,200,300)
+    |
+    | Fa0/24 (Trunk: VLAN 100,200,300)
+    |
+[Switch 2]
+Fa0/8 (VLAN 200)
+Fa0/10 (VLAN 100)
+Fa0/12 (VLAN 200 - vers Routeur)
+Fa0/14 (VLAN 100 - vers Routeur)
+Fa0/16 (VLAN 300 - vers Routeur)
+    |
+    |
+    |
+[Routeur]
+GE0/0: 172.31.4.190/26 (VLAN 200)
+GE0/1: 172.31.4.206/28 (VLAN 300)
+GE2/0: 172.31.4.126/25 (VLAN 100)
+
+[PC1] --- Fa0/8 (Switch 1) [VLAN 200]
+[PC2] --- Fa0/10 (Switch 1) [VLAN 100]
+[PC3] --- Fa0/8 (Switch 2) [VLAN 200]
+[PC4] --- Fa0/10 (Switch 2) [VLAN 100]
+
+VLAN 100 (LAN):
+- Plage: 172.31.4.1 - 172.31.4.128
+- Masque: 255.255.255.128
+- Passerelle: 172.31.4.126
+
+VLAN 200 (DAM):
+- Plage: 172.31.4.129 - 172.31.4.190
+- Masque: 255.255.255.192
+- Passerelle: 172.31.4.190
+
+VLAN 300 (DMZ):
+- Plage: 172.31.4.192 - 172.31.4.206
+- Masque: 255.255.255.240
+- Passerelle: 172.31.4.206
+
+DHCP:
+- Pool VLAN 100: 172.31.4.0 255.255.255.128
+- Pool VLAN 200: 172.31.4.128 255.255.255.192
+- Pool VLAN 300: 172.31.4.192 255.255.255.240
+
+Adresses exclues du DHCP:
+- 172.31.4.125
+- 172.31.4.89
+- 172.31.4.20
+
+Configuration Trunk (Fa0/24 sur les deux switches):
+- switchport mode trunk
+- switchport trunk allowed vlan add 100,200,300
