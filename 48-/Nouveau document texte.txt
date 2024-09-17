@@ -21,6 +21,7 @@ Fa0/10 (VLAN 100)
 Fa0/12 (VLAN 200 - vers Routeur)
 Fa0/14 (VLAN 100 - vers Routeur)
 Fa0/16 (VLAN 300 - vers Routeur)
+Fa0/24 (Trunk: VLAN 100,200,300)
     |
     |
     |
