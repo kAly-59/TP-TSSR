@@ -15,7 +15,7 @@ Ce dépôt contient l'ensemble des briefs réalisés dans le cadre de ma formati
 
 ## 📂 Structure du dépôt (Liens en cours)
 
-1. [Brief 1 - Professionnel(le) de l'information automatique](https://github.com/kAly-59/TP-TSSR/tree/main/Brief%201)
+1. [Brief 1 - Professionnel(le) de l'information automatique](https://github.com/kAly-59/TP-TSSR/tree/main/01-%20Professionnel(le)%20de%20l'information%20automatique)
 2. [Brief 2 - Virtualisation les bases](https://github.com/kAly-59/TP-TSSR/tree/main/Brief%202)
 3. [Brief 3 - Déploiement de Réseaux Virtuels pour l'Entreprise DECOURANT](https://github.com/kAly-59/TP-TSSR/tree/main/Brief%203)
 4. [Brief 4 - LINUX - Initiation à l'utilisation des systèmes](https://github.com/kAly-59/TP-TSSR/tree/main/Brief%204)
