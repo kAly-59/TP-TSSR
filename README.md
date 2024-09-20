@@ -79,7 +79,7 @@ Ce dépôt est régulièrement mis à jour avec de nouveaux briefs au fur et à 
 Pour toute question ou suggestion concernant ce dépôt, n'hésitez pas à me contacter :
 
 - GitHub : [@kAly-59](https://github.com/kAly-59)
-- LinkedIn : [www.linkedin.com/in/kevin-callet-223472298]
+- LinkedIn : www.linkedin.com/in/kevin-callet-223472298
 
 ---
 
